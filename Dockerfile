@@ -4,7 +4,7 @@ RUN apt-get update
 RUN apt-get install -y bash
 
 RUN python3 -m pip install --upgrade pip
-RUN pip3 install notebook==6.4 eth-brownie==1.18 fireblocks-sdk
+RUN pip3 install notebook==6.4 eth-brownie==1.18 fireblocks-sdk==1.7.0
 ENV PATH=/home/user/.local/bin:$PATH
 
 RUN adduser user
